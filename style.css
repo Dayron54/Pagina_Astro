@@ -417,4 +417,108 @@ main {
 
     
   }
+
+  .frameworks {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 200px;
+
+    h3 {
+      font-size: 16px;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: 600;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      width: 500px;
+      margin-bottom: 30px;
+    }
+
+    .integrate {
+      color: #bfc1c9;
+      background-color: #2c2c2c4d;
+      padding: 9px 20px;
+      border-radius: 99999px;
+      text-decoration: none;
+      border: 1px solid #858b984d;
+      transition: border .5s ease, color .5s ease ;
+
+      &:hover {
+        border-color: #858b9899;
+        color: #f2f6fa;
+      }
+    }
+
+    .frameworks-rounds {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+
+      .round {
+        width: 77px;
+        height: 77px;
+        background: red;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .filled{
+          width: 68px;
+          height: 68px;
+          border-radius: 50%;
+          background-color: #0000008b;
+
+          filter: grayscale(100%);
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 32px;
+            height: 32px;
+            color: #858b9983;
+          }
+        }
+
+        &:not(:hover) {
+          background-color: #858b99;
+        }
+
+        &:hover .filled{
+          background-color: #858b9983;
+          filter: grayscale(0%z);
+        }
+      }
+
+      .react {
+        background: rgb(97 218 251);
+      }
+
+      .vue {
+        background: rgb(65, 184, 131);
+      }
+      
+      .preact{
+        background: rgb(103, 58, 184);
+      }
+
+      .svelte {
+        background: rgb(255, 62, 0)
+      }
+
+      .solid {
+        background: rgb(118, 179, 225)
+      }
+    }
+  }
 }
